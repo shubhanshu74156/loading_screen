@@ -1,0 +1,188 @@
+#preLoader {
+    position: relative; /* Ensure positioning context */
+    background-color: black;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+  }
+
+  @media screen and (max-width: 480px)  {
+        #preLoader {
+            position: relative; /* Ensure positioning context */
+            background-color: black;
+            height: 100vh;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 28px;
+          }
+}
+
+@media screen  and (max-width: 1024px)  {
+    #preLoader {
+        position: relative; /* Ensure positioning context */
+        background-color: black;
+        height: 100vh;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 60px;
+      }
+}
+
+@media screen  and (max-width: 720px)  {
+    #preLoader {
+        position: relative; /* Ensure positioning context */
+        background-color: black;
+        height: 100vh;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 48px;
+      }
+}
+  
+  #preLoader > div {
+    position: absolute;
+    top: 50;
+    left: 50;
+  }
+  
+  /* Adjust z-index to control the stacking order */
+  .first {
+    z-index: 7;
+  }
+  
+  .second {
+    z-index: 6;
+  }
+  
+  .third {
+    z-index: 5;
+  }
+  
+  .fourth {
+    z-index: 4;
+  }
+  
+  .fifth {
+    z-index: 3;
+  }
+  
+  .sixth {
+    z-index: 2;
+  }
+  
+  .seventh {
+    z-index: 1;
+  }
+  
+.first {
+    animation: first 2s linear infinite; /* Added duration */
+}
+
+.second {
+    animation: second 2s linear infinite; /* Added duration */
+}
+.third {
+    animation: third 2s linear infinite; /* Added duration */
+}
+.fourth{
+    animation: fourth 2s linear infinite; /* Added duration */
+}
+.fifth {
+    animation: fifth 2s linear infinite; /* Added duration */
+}
+.sixth{
+    animation: sixth 2s linear infinite; /* Added duration */
+}
+.seventh{
+    animation: seventh 2s linear infinite; /* Added duration */
+}
+
+
+@keyframes first {
+   0%,20%{
+    opacity: 1;
+    
+   }
+   20%,100%{
+    opacity: 0;
+   }
+}
+
+@keyframes second {
+    0%,20%{
+        opacity: 0;
+    }
+    21%,30%{
+     opacity: 1;
+    }
+    31%,100%{
+     opacity: 0;
+    }
+ }
+ @keyframes third {
+    0%,30%{
+        opacity: 0;
+    }
+    31%,40%{
+        opacity: 1;
+    }
+    41%,100%{
+        opacity: 0;
+    }
+ }
+ @keyframes fourth {
+    0%,40%{
+        opacity: 0;
+    }
+    41%,50%{
+        opacity: 1;
+    }
+    51%,100%{
+        opacity: 0;
+    }
+ }
+ @keyframes fifth {
+    0%,50%{
+        opacity: 0;
+    }
+    51%,60%{
+        opacity: 1;
+    }
+    61%,100%{
+        opacity: 0;
+    }
+ }
+ @keyframes sixth {
+    0%,60%{
+        opacity: 0;
+    }
+    61%,70%{
+        opacity: 1;
+    }
+    71%,100%{
+        opacity: 0;
+    }
+    
+ }
+ @keyframes seventh {
+    0%,70%{
+        opacity: 0;
+    }
+    71%,80%{
+        opacity: 1;
+    }
+    81%,100%{
+        opacity: 0;
+    }
+    
+ }
+
